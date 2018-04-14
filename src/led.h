@@ -26,3 +26,8 @@ static inline void led_off(PORTSELECTOR_t port,
         gpio_set_output_high(port, pin);
     #endif
 }
+
+static inline void led_toggle(PORTSELECTOR_t port,
+                              PINSELECTOR_t  pin){
+        gpio_set_output_toggle(port, pin);
+}
