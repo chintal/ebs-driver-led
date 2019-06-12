@@ -1,7 +1,7 @@
 
 
-#include "bsp/hal/uc/types.h"
-#include "bsp/hal/uc/gpio.h"
+#include <platform/types.h>
+#include "hal/uc/gpio.h"
 
 
 static inline void led_init(PORTSELECTOR_t port,
